@@ -1,5 +1,10 @@
 version: 2
 jobs:
+  deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "91:d8:cb:cc:8b:68:de:49:12:66:c3:d1:6b:e2:7e:4e"
   build:
     # Variable expansion in working_directory not supported at this time
     # You will need to modify the code below to reflect your github account/repo setup
